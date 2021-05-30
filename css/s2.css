@@ -1,0 +1,137 @@
+
+#s2 {
+	background-color: #F5F5EF;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#s2 .title {
+	background-color: #32BF89;
+	padding: 15px 0;
+	position: relative;
+}
+
+#s2 .title .container {
+	width: 50%;
+	margin-right: auto;
+	margin-left: 0;
+}
+
+#s2 .title::after {
+	background-image: url("../img/Asset 18.svg");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-size: 100px;
+	content:"";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	height:40px;
+}
+
+.title .title-box {
+	width: 300px;
+	margin-left:auto;
+	margin-right: 30px;
+}
+
+.title-box img {
+	display: block;
+	width: 100%;
+}
+
+#s2 .footer {
+	background-color: #32BF89;
+	height:15vh;
+	position: relative;
+}
+
+#s2 .footer::after {
+	background-image: url("../img/Asset 19.svg");
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-size: 100px;
+	content:"";
+	position: absolute;
+	left: 0;
+	top: -5px;
+	width: 100%;
+	height:40px;
+}
+
+.slider {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#sl_01 .item img {
+	display: block;
+    width: 100%;
+}
+
+.slider .item {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.item .tiger-box {
+    width: 50%;
+    height: 65vh;
+    
+}
+
+.tiger-box img {
+	display: block;
+    width: auto;
+    height: 100%;
+}
+
+.item .descr-box {
+    width: 50%;
+    max-width: 500px;
+}
+
+h2{
+	font-size: 4vh;
+	text-transform: uppercase;
+	color: #1D7151;
+	margin-bottom: 10%;
+}
+
+h3{
+	text-transform: uppercase;
+	color: #DC3C4D;
+	margin-bottom: 5%;
+}
+
+p{
+	color: #1D7151;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width:680px) {
+
+	.item .tiger-box {
+        height: auto;
+	}
+
+	.tiger-box img  {
+    	width: 100%;
+    	height: auto;
+	}
+
+	.item .tiger-box,
+	.item .descr-box {
+		width: 100%;
+	}
+
+}

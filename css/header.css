@@ -1,0 +1,79 @@
+header {
+    height:100vh;
+}
+
+#top .title {
+    background-color: #F5F5EF;
+    padding: 15px 0;
+    position: relative;
+}
+
+.title .container {
+    width: 50%;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.title .title-box {
+    width: 300px;
+    margin-left:auto;
+    margin-right: 30px;
+}
+
+.title-box img {
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+header .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+header img {
+    display: block;
+    width:100%;
+}
+
+header .box-left,
+header .box-right {
+    position:absolute;
+    z-index:0;
+}
+
+header .box-left {
+    left:0;
+    top:0;
+}
+
+header .box-right {
+    right:0;
+    bottom:0;
+}
+
+header .box-left,
+header .box-right {
+    width: 25%;
+}
+
+header .box-center svg {
+    height: 70vh;
+    width: auto;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    header .box-center svg {
+       height: auto;
+        width: 75vw;
+    }
+
+    header .box-left,
+    header .box-right {
+        width: 35%;
+    }    
+}

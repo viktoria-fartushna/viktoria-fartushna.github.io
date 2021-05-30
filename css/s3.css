@@ -1,0 +1,105 @@
+#s3 {
+	background-color: #1D7151;
+	min-height: 100vh;
+}
+
+#s3 .title {
+	background-color: #1D7151;
+    padding: 15px 0;
+    position: relative;
+}
+
+#s3 .title .container {
+	width: 50%;
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.title .title-box {
+	width: 300px;
+	margin-left:auto;
+	margin-right: 30px;
+}
+
+.title-box img {
+	display: block;
+	width: 100%;
+	padding: 15px;
+}
+
+.container#tiger {
+	max-width: 70%;
+	width: 40vh;
+	margin-top: 5%;
+}
+
+.btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #FFBBC6;
+  border-radius: 2em;
+  color: #FFBBC6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10vh auto;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #1D7151;
+  outline: 0;
+}
+
+.bth {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+#button:hover {
+  box-shadow: 0 0 40px 40px #FFBBC6 inset;
+}
+
+.footer p{
+	font-size: 1rem;
+	color: #F5F5EF;
+	text-align: center;
+}
+a:link {
+    color: #FFBBC6;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #FFBBC6;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #DC3C4D;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: #32BF89;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width:680px) {
+
+	.container {
+        height: auto;
+	}
+
+	.container img  {
+    	width: 100%;
+    	height: auto;
+	}
+

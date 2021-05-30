@@ -1,0 +1,16 @@
+svg #start {
+	cursor: pointer;
+}
+
+svg #sectors {
+	transform-origin: center center;
+	transform: none;
+	transition: transform 2s ease-in-out;
+	
+}
+
+/*svg #sectors.rotated {
+	transform: rotate(0);
+	transition: transform .5s ease;
+	transition-delay: 2s;
+}*/

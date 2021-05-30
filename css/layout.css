@@ -1,0 +1,44 @@
+/* Нормалізація */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* END of Нормалізація */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header, section {
+    min-height: 100vh;
+}
+
+.container-fluid,
+.container {
+    margin: 0 auto; /* Центрування по-горизонталі */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container {
+    max-width:1200px;
+}
+
+
+#s1 {
+    background-color: #F5F5EF;
+}
+
+#s2 {
+    background-color: #fff;
+}
+
+#s3 {
+    background-color: #1D7151;
+}

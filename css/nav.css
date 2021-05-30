@@ -1,0 +1,149 @@
+nav {
+  background-color: #F5F5EF;
+  position: fixed;
+  top:0;
+  right:0;
+  width: 50%;
+  z-index: 9995;
+  border-radius: 100px 0  0 100px;
+}
+
+nav {
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: lowercase;
+
+}
+
+nav.topfixed {
+
+}
+
+nav .navbar {
+    width:100%;
+    margin-left: auto;
+}
+
+nav .navigation {
+  padding-left: 30px;
+}
+
+.navigation ul {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: .05em;
+    list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation a:hover {
+    color:  #FFBBC6;
+}
+
+nav a {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+nav a::after {
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    display: block;
+    width:110px;
+    height: 13px;
+    opacity:0;
+    transition: all 1s ease;
+    transform: translateY(100%);
+}
+
+nav a:hover::after {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+nav .navigation li a {
+    color: #1D7151;}
+
+nav .navigation li  {
+    margin-right: 20px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    padding: 25px 0;
+}
+
+.navigation li:first-child a {
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    outline: none;
+    display: none; 
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav .navbar {
+        align-items: center;
+    }
+    
+    nav.topfixed .navigation li a {
+        color: #F5F5EF;
+    }
+
+    .navigation button {
+        position: relative;
+        display: block;
+        margin: 0;
+        z-index: 9999;
+    }
+    
+    .navigation ul {
+        background-color: #1F7252;
+        position: absolute;
+        padding: 100px 30px 30px 20px;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        min-width: 50%;
+        min-height: 100vh;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        opacity:0;
+        transition-property: transform;
+        transition-duration: .35s;
+/*        transition-delay: .2s;*/
+        transition-timing-function: ease;
+        z-index: 9998;
+    }
+    
+    .navigation.open ul {
+        transform: translateX(0);
+        opacity:1;
+    }
+    
+    .navigation.open .overlay {
+        background-color: #1F7252;
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        min-height: 100vh;
+        z-index: 99;
+    }
+}
